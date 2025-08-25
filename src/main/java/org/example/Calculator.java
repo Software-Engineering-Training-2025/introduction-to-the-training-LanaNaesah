@@ -15,9 +15,10 @@ public class Calculator {
             return a * b;
         } else if (op == Operator.DIVIDE) {
             if (b==0) {
-                throw new ArithmaticException("Division by zero is not allowed")
+                throw new ArithmaticException("Division by zero is not allowed");
+            }
             return a / b;
-        } else {
+         else {
             throw new IllegalArgumentException("Unknown operator");
         }
     }
